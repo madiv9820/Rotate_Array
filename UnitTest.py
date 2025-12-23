@@ -1,7 +1,7 @@
 import unittest
 from timeout_decorator import timeout
 from src.rotate_py.Solution_py import pySolution
-#from src.rotate_cpp.Solution_cpp import cppSolution
+from src.rotate_cpp.Solution_cpp import cppSolution
 
 class UnitTest(unittest.TestCase):
     def setUp(self):
@@ -11,7 +11,7 @@ class UnitTest(unittest.TestCase):
             ([1,5,3,2,7], 10000, [1,5,3,2,7]),
             ([1,2,3,4], 0, [1,2,3,4])
         )
-        self.__solution = pySolution()
+        self.__solution = cppSolution()
         return super().setUp()
     
     @timeout(0.5)
