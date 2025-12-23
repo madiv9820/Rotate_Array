@@ -2,3 +2,4 @@ __pycache__/
 venv/
 Solution_cpp*
 Solution.cpp
+build/
